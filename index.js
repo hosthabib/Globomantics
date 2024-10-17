@@ -29,7 +29,7 @@ app.use(session({secret:'globomantics'}));
 import passportConfig from './src/data/config/passport.js';
 passportConfig(app);
 
-app.set('views','./src/views');
+app.set('views',path.join(__dirname,'./src/views'));
 app.set('view engine', 'ejs');
 
 
